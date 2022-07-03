@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  color: red;
+  background-color: aquamarine;
+  height: 20px;
+}
