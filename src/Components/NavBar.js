@@ -1,39 +1,36 @@
 
 import React from 'react'
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
   return (
-
-    <nav  className="navbar navbar-expand-sm bg-light navbar-info text-align center">
-      <a className="navbar-brand" href="#">
-        Modo Mundial
+    <nav className="nav nav-pills flex-column flex-sm-row">
+      <a className="flex-sm-fill text-sm-center nav-link" href="#">
+        <img
+          className="logotipo"
+          src="/images/Logo_3.png"
+          width="150px"
+          height="150px"
+          alt="logo modo mundial"
+        />
+      </a>
+      <a className="flex-sm-fill text-sm-center nav-link" href="#">
+        Historia de Los mundiales
+      </a>
+      <a className="flex-sm-fill text-sm-center nav-link" href="#">
+        Balones historicos
+      </a>
+      <a
+        className="flex-sm-fill text-sm-center nav-link "
+        href="#"
+        tabindex="-1"
+        aria-disabled="true"
+      >
+        Jugadores destacados
+        
       </a>
 
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Fixture
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Equipos y jugadores Historicos
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Balones
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">
-            Indumentarias
-          </a>
-        </li>
-        <li className="nav-item">
-      <a className="nav-link" href="#">Contacto</a>
-    </li>
-      </ul>
+      <CartWidget />
     </nav>
   );
     }

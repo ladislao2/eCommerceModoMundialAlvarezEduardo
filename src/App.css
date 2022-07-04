@@ -4,7 +4,19 @@
 }
 
 .nav {
-  color: red;
-  background-color: aquamarine;
-  height: 20px;
+ font-size: 20px;
+  margin: 2px;
+  padding: 2px;
+  background-image: linear-gradient( 90deg, #8A0808,#8A0808,#8A0808, silver, white);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: black;
+  font-weight:bolder
+}
+.logotipo {
+  border-radius: 10px;
 }
