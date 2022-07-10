@@ -1,8 +1,13 @@
+import React from "react";
+import CartWidget from "./CartWidget";
+import ItemCount from "./ItemCount";
 
-import React from 'react'
-import CartWidget from './CartWidget';
 
 const NavBar = () => {
+  const onAdd = () => {
+    console.log('click');
+  };
+  
   return (
     <nav className="nav nav-pills flex-column flex-sm-row">
       <a className="flex-sm-fill text-sm-center nav-link" href="#">
@@ -15,25 +20,20 @@ const NavBar = () => {
         />
       </a>
       <a className="flex-sm-fill text-sm-center nav-link" href="#">
-        Historia de Los mundiales
+        Pelotas
       </a>
       <a className="flex-sm-fill text-sm-center nav-link" href="#">
-        Balones historicos
+        Camisetas
       </a>
-      <a
-        className="flex-sm-fill text-sm-center nav-link "
-        href="#"
-        tabindex="-1"
-        aria-disabled="true"
-      >
-        Jugadores destacados
-        
+      <a className="flex-sm-fill text-sm-center nav-link " href="#">
+        Contacto
       </a>
-
+      
+      <ItemCount stock={10} inicial={1} onAdd={onAdd}/>
+      
       <CartWidget />
     </nav>
   );
-    }
-  
+};
 
 export default NavBar;

@@ -20,3 +20,32 @@
 .logotipo {
   border-radius: 10px;
 }
+
+.cartWidget{
+  width: 40px;
+  height: 40px;
+  color: #8A0808;
+
+}
+
+.botonIncrementar {
+  width: 35px;
+  height: 35px;
+  display: flex;
+}
+
+.botonDecrementar {
+  width: 35px;
+  height: 35px;
+  
+  
+}
+
+.cajaBotonera {
+  display: flex;
+  text-align: justify;
+  justify-content: space-around;
+  margin-bottom: 0px;
+  
+  
+}

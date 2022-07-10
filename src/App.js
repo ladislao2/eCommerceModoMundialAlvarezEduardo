@@ -3,14 +3,16 @@ import Navbar from "./Components/NavBar.js";
 import ItemListContainer from "./Components/ItemListContainer.js";
 
 
+
 function App() {
-  let nombreUsuario = 'Edu'
+  let nombreUsuario = "Edu";
+
   return (
     <>
-      <Navbar/>
-    <ItemListContainer greeting={nombreUsuario}/>
+      <Navbar />
 
-  </>
+      <ItemListContainer greeting={nombreUsuario} />
+    </>
   );
 }
 
