@@ -1,8 +1,13 @@
+import React from 'react';
 
-
- const Item = () => {
+ const Item = ({item}) => {
   return (
-    <div>Item</div>
+    <div>
+      <img src={item.img} alt="" width="100px"/>
+      <div>
+        <h2>{item.name}</h2>
+      </div>
+    </div>
   )
 }
 
