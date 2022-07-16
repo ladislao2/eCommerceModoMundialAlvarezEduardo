@@ -1,13 +1,12 @@
 import React from "react";
 import CartWidget from "./CartWidget";
-import ItemCount from "./ItemCount";
 
 
 const NavBar = () => {
   const onAdd = () => {
-    console.log('click');
+    console.log("click");
   };
-  
+
   return (
     <nav className="nav nav-pills flex-column flex-sm-row">
       <a className="flex-sm-fill text-sm-center nav-link" href="#">
@@ -28,9 +27,9 @@ const NavBar = () => {
       <a className="flex-sm-fill text-sm-center nav-link " href="#">
         Contacto
       </a>
-      
-      <ItemCount stock={10} inicial={1} onAdd={onAdd}/>
-      
+
+     
+
       <CartWidget />
     </nav>
   );

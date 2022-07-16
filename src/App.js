@@ -1,17 +1,23 @@
 import "./App.css";
 import Navbar from "./Components/NavBar.js";
 import ItemListContainer from "./Components/ItemListContainer.js";
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  let nombreUsuario = "Edu";
+  
 
   return (
     <>
-      <Navbar />
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={<ItemListContainer greeting='Bienvenido'/> }/>
 
-      <ItemListContainer greeting={nombreUsuario} />
+          
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

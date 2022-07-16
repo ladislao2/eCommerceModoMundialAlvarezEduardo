@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import productos from "../mock/productos";
 import ItemList from "./ItemList";
 
-const ItemListContainer = ({ greeting }) => {
+
   const [items, setItems] = useState([]);
   useEffect(() => {
     const traerProductos = new Promise((resolve, reject) => {
@@ -22,14 +22,6 @@ const ItemListContainer = ({ greeting }) => {
 
   console.log(items);
 
-  return (
-    <>
-      <h2> {greeting} listo para comprar</h2>
-      <div className="cards">
-        <ItemList items={items} />
-      </div>
-    </>
-  );
-};
+ 
 
-export default ItemListContainer;
+export default ItemDetailContainer;
