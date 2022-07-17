@@ -1,15 +1,11 @@
 import React from "react";
 import CartWidget from "./CartWidget";
-
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
-  const onAdd = () => {
-    console.log("click");
-  };
-
   return (
     <nav className="nav nav-pills flex-column flex-sm-row">
-      <a className="flex-sm-fill text-sm-center nav-link" href="#">
+      <Link to="/" className="flex-sm-fill text-sm-center nav-link" href="/">
         <img
           className="logotipo"
           src="/images/Logo_3.png"
@@ -17,18 +13,14 @@ const NavBar = () => {
           height="150px"
           alt="logo modo mundial"
         />
-      </a>
-      <a className="flex-sm-fill text-sm-center nav-link" href="#">
-        Pelotas
-      </a>
-      <a className="flex-sm-fill text-sm-center nav-link" href="#">
-        Camisetas
-      </a>
-      <a className="flex-sm-fill text-sm-center nav-link " href="#">
+      </Link>
+      <NavLink to="/About" className="flex-sm-fill text-sm-center nav-link" >
+        About
+      </NavLink>
+      
+      <NavLink to="/Contacto" className="flex-sm-fill text-sm-center nav-link " >
         Contacto
-      </a>
-
-     
+      </NavLink>
 
       <CartWidget />
     </nav>

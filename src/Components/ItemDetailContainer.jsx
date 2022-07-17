@@ -1,27 +1,27 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import productos from "../mock/productos";
-import ItemList from "./ItemList";
 
+import ItemDetail from "./ItemDetail";
 
-  const [items, setItems] = useState([]);
-  useEffect(() => {
-    const traerProductos = new Promise((resolve, reject) => {
+const ItemDetailContainer = () => {
+  const [item, setItem] = useState({});
+
+  const traerItemPorId = () => {
+    return new Promise((resolve) => {
       setTimeout(() => {
-        resolve(productos);
-      }, 2000);
+        resolve(productos.find((obj) => obj.id === "4"));
+      }, 3000);
     });
-    traerProductos
-      .then((data) => {
-        setItems(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []); //corchetes vacios dice que cuando se monte el componente useEffect se ejecuta la primera vez y nada mas.
+  };
 
-  console.log(items);
+  useEffect(() => {
+    traerItemPorId().then((respuesta) => {
+      setItem(respuesta);
+    });
+  }, []);
 
- 
+  return <ItemDetail item={item} />;
+};
 
 export default ItemDetailContainer;
