@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import App from "../App";
+
 
 const ItemCount = ({ stock, inicial, onAdd }) => {
   const [count, setCount] = useState(0);

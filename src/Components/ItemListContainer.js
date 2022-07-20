@@ -10,14 +10,14 @@ const ItemListContainer = ({ greeting }) => {
     const traerProductos = new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(productos);
-      }, 2000);
+      }, 50);
     });
     traerProductos
       .then((data) => {
         setItems(data);
       })
       .catch((error) => {
-        console.log(error);
+        //console.log(error);
       });
   }, []); //corchetes vacios dice que cuando se monte el componente useEffect se ejecuta la primera vez y nada mas.
 

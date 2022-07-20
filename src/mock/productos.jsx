@@ -10,7 +10,7 @@ const productos = [
   },
 
   {
-    id: 2,
+    id:2,
     name: 'Fevernova "2002"',
     Precio: 200,
     Stock: 3,

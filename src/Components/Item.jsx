@@ -5,7 +5,7 @@ import ItemCount from "./ItemCount";
 import { Link} from "react-router-dom"
 
 const onAdd = () => {
-  console.log("click");
+  //console.log("click");
 };
 const Item = ({ item }) => {
   return (
