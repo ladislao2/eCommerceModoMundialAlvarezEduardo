@@ -11,8 +11,8 @@ const ItemDetailContainer = () => {
   const traerItemPorId = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
-        resolve(productos.find((obj) => obj.id == id));
-      }, 1000);
+        resolve(productos.find(obj => obj.id === id));
+      }, 1000)
     });
   };
 
@@ -20,13 +20,13 @@ const ItemDetailContainer = () => {
     traerItemPorId().then((respuesta) => {
       setItem(respuesta);
     });
-  }, []);
+  }, [id]);
 
   return (
     <div>
-      <ItemDetail item={item} />;
+      <ItemDetail item={item} />
     </div>
   );
 };
 
-export default ItemDetailContainer;
+export default ItemDetailContainer
