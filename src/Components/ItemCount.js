@@ -22,11 +22,11 @@ const ItemCount = ({ stock, inicial, onAdd, Precio }) => {
         </button>
         <p>{count}</p>
         <button className="botonDecrementar" onClick={decrementar}>
-          -{" "}
+          -
         </button>
       </div>
       <span>
-        <b>Total: ${count * Precio}</b>
+        <b>Total:  ${count * Precio}</b>
       </span>
 
       <div>

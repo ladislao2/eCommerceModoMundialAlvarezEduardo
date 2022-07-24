@@ -21,7 +21,7 @@ const ItemListContainer = ({ greeting }) => {
       });
   }, []); //corchetes vacios dice que cuando se monte el componente useEffect se ejecuta la primera vez y nada mas.
 
-  console.log(items);
+ // console.log(items);
 
   return (
     <>
