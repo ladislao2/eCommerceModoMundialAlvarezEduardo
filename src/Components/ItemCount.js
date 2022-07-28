@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const ItemCount = ({ stock, inicial, onAdd, Precio }) => {
   const [count, setCount] = useState(inicial);
+  
 
   const incrementar = () => {
     if (count < stock) {
@@ -26,16 +27,20 @@ const ItemCount = ({ stock, inicial, onAdd, Precio }) => {
         </button>
       </div>
       <span>
-        <b>Total:  ${count * Precio}</b>
+        <b>Total: ${count * Precio}</b>
+        
       </span>
-
+      
       <div>
         <button className="add-btn" onClick={() => onAdd(count)}>
           Agregar al carrito
         </button>
       </div>
     </div>
+    
   );
+  
 };
+
 
 export default ItemCount;
