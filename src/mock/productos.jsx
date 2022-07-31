@@ -2,8 +2,8 @@ const productos = [
   {
     id: "1",
     name: 'Tango "1986"',
-    Precio: 200,
-    Stock: 3,
+    Precio: 12350,
+    Stock: 10,
     img: "/images/tango.jpg",
     categoria: "Pelota",
     Descripcion: "Pelota Pesada",
@@ -12,8 +12,8 @@ const productos = [
   {
     id: "2",
     name: 'Fevernova "2002"',
-    Precio: 200,
-    Stock: 3,
+    Precio: 12000,
+    Stock: 10,
     img: "/images/fevernova.jpg",
     categoria: "Pelota",
     Descripcion: "Pelota intermedia",
@@ -22,8 +22,8 @@ const productos = [
   {
     id: "3",
     name: 'Al Rihla "2022""',
-    Precio: 200,
-    Stock: 3,
+    Precio: 13450,
+    Stock: 10,
     img: "/images/Al Rihla.jpg",
     categoria: "Pelota",
     Descripcion: "Pelota liviana",
