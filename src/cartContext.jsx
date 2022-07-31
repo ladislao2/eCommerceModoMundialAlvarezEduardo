@@ -14,26 +14,39 @@ const Provider = (props) => {
     item, //este item tiene id asi que lo uso.
     cantidad //Mantener el orden primero poner el objeto y despues el Number
   ) => {
-    if(isInCart(item.id)){
-        alert('ya esta en el carrito');
-        //sumo la cantidad
+    if (isInCart(item.id)) {
+      alert("ya esta en el carrito");
+      //sumo la cantidad
     } else {
-        setCart([...cart, {...item, cantidad}]);
-        //lo agrego al carrito
-  }
+      setCart([...cart, { ...item, cantidad }]);
+      //lo agrego al carrito
+    }
+  };
 
-};
+  const isInCart = (id) => {
+    //por cada iteracion de cada producto voy a estar comparando id de este producto con el ide que me llega por parametro(id)
+    return cart.some((item) => item.id === id); //el some me va a devolver un true o false
+  };
 
-const isInCart =(id) => { //por cada iteracion de cada producto voy a estar comparando id de este producto con el ide que me llega por parametro(id)
-    return cart.some((item) => item.id === id);//el some me va a devolver un true o false
-}
+  // funcion para calcular total de unidades
+
+  // funcion para calcular el total de precio (unidades*precio)
+
+  //funcion que elimine a un producto en particular
+  const deleteUno = (id) => {
+    const productosFiltrados = cart.filter((prod) => prod.id !== id); //filter se queda con todos los productos q no se ese id
+    setCart(productosFiltrados);
+    //setCart(cart.filter((prod) => prod.id !== id));
+  };
+
+  //funcion que borre todos los productos del carrito
+  const deleteAll = () => {
+    setCart([]);
+  };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart }}>
-  
-      //*Voy a proveer de datos a todos los componentes que quiera. debo tener
-      el value para pasar parametros a sus hijos.
-      {props.children} 
+    <CartContext.Provider value={{ cart, addToCart, deleteAll, deleteUno }}>
+      {props.children}
     </CartContext.Provider> // viajan los children aca, desde la app
   );
 };

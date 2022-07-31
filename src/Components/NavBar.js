@@ -21,8 +21,9 @@ const NavBar = () => {
       <NavLink to="/Contacto" className="flex-sm-fill text-sm-center nav-link " >
         Contacto
       </NavLink>
-
-      <CartWidget />
+<NavLink to="/cart" >
+      <CartWidget/>
+      </NavLink>
     </nav>
   );
 };
