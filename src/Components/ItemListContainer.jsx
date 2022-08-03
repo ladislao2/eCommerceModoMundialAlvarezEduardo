@@ -1,41 +1,47 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import productos from "../mock/productos";
+//import productos from "../mock/productos";
 import ItemList from "./ItemList";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  query,
+  where,
+} from "firebase/firestore";
+import { useParams } from "react-router-dom";
 
-const ItemListContainer = ({ greeting }) => {
-  const [items, setItems] = useState([]);
-  const [cargando, setCargando] = useState(false);
+const ItemListContainer = () => {
+  const [data, setData] = useState([]);
+  const { categoria } = useParams();
 
   useEffect(() => {
-    setCargando(true)
-    const traerProductos = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(productos);
-      }, 3000);
-    });
-    traerProductos
-      .then((data) => {
-        setItems(data);
-        setCargando(false);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []); //corchetes vacios dice que cuando se monte el componente useEffect se ejecuta la primera vez y nada mas.
+    const querydb = getFirestore();
+    const queryCollection = collection(querydb, "items");
+    if (categoria) {
+      const queryFilter = query(
+        queryCollection,
+        where("categoria", "==", categoria)
+      );
 
-  // console.log(items);
+      getDocs(queryFilter).then(res =>
+        setData(res.docs.map(items => ({ id: items.id, ...items.data() })))
+      );
+    } else {
+      getDocs(queryCollection).then(res =>
+        setData(res.docs.map(items=> ({ id: items.id, ...items.data() })))
+      );
+    }
+  }, [categoria]);
 
   return (
     <div>
-      <h2> {greeting} listo para comprar</h2>
-      {cargando ? (
-        <h3>Cargando productos sepa disculpar los estilos...</h3>
-      ) : (
+      
+     
         <div className="cards">
-          <ItemList items={items} />
+          <ItemList items={data} />
         </div>
-      )}
+  
     </div>
   );
 };

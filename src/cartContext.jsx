@@ -9,7 +9,7 @@ const Provider = (props) => {
   // funcion para calcular el total de precio (unidades*precio)
   const totalCart = () => {
     let suma = 0;
-    cart.forEach(item => (suma += item.Precio*item.Stock));
+    cart.forEach(item => (suma += item.Precio*item.cantidad));
     setSuma(suma);
   };
   useEffect(() => {
