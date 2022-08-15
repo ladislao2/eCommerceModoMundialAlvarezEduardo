@@ -5,16 +5,16 @@ export const CartContext = createContext();
 const Provider = (props) => {
   //si o si creo un componente va a envolver toda mi app
   const [cart, setCart] = useState([]);
-  const [suma, setSuma] = useState(0);
+
   // funcion para calcular el total de precio (unidades*precio)
   const totalCart = () => {
-    let suma = 0;
-    cart.forEach(item => (suma += item.Precio*item.cantidad));
-    setSuma(suma);
+    let total = 0;
+    cart.forEach((item) => (total += item.Precio * item.cantidad));
+
+    return total;
   };
   useEffect(() => {
     console.log(cart);
-    totalCart();
   }, [cart]);
 
   const addToCart = (
@@ -37,8 +37,6 @@ const Provider = (props) => {
 
   // funcion para calcular total de unidades
 
-
-
   //funcion que elimine a un producto en particular
   const deleteUno = (id) => {
     const productosFiltrados = cart.filter((prod) => prod.id !== id); //filter se queda con todos los productos q no se ese id
@@ -53,7 +51,7 @@ const Provider = (props) => {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, deleteAll, deleteUno, suma, }}
+      value={{ cart, addToCart, deleteAll, deleteUno, totalCart }}
     >
       {props.children}
     </CartContext.Provider> // viajan los children aca, desde la app

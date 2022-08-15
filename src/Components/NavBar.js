@@ -14,12 +14,12 @@ const NavBar = () => {
           alt="logo modo mundial"
         />
       </Link>
-      <NavLink to="/About" className="flex-sm-fill text-sm-center nav-link">
-        About
+      <NavLink to="/categorias/Pelota" className="flex-sm-fill text-sm-center nav-link">
+        Pelotas
       </NavLink>
 
-      <NavLink to="/Contacto" className="flex-sm-fill text-sm-center nav-link ">
-        Contacto
+      <NavLink to="/categorias/Camiseta" className="flex-sm-fill text-sm-center nav-link ">
+        Camisetas
       </NavLink>
       <NavLink to="/cart">
         <CartWidget />

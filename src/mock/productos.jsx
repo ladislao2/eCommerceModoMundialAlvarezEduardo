@@ -21,7 +21,7 @@ const productos = [
 
   {
     id: "3",
-    name: 'Al Rihla "2022""',
+    name: 'Al Rihla "2022"',
     Precio: 13450,
     Stock: 10,
     img: "/images/Al Rihla.jpg",
