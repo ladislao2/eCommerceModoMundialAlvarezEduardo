@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+Modo Mundial
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pequeña tienda dedicada al Mundial de futbol
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+Comenzando 🚀
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Descarga el proyecto y utiliza npx create react app "nombre" para crear una aplicación y poder visualizarlo. Para poder editarlo deberás poseer un editor como Visual 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Studio Code o Sublime.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Herramientas 🛠️
 
-### `npm run build`
+Para llevar adelante este proyecto utilicé:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+NodeJs - Entorno multiplataforma
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Visual Studio Code - Editor de código
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Google Chrome - Navegador Web
 
-### `npm run eject`
+Firebase - Backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Código 🔧
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+HTML
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+CSS
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+JAVASCRIPT
 
-## Learn More
+REACT JS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Librerias utilizadas 🔧
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+react-router-dom
 
-### Code Splitting
+react-hook-form
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Autor ✒️
+Eduardo Alvarez Holmberg
 
-### Analyzing the Bundle Size
+¿Cómo comprar? 📄
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+Aca va el gif
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Licencia 📄
 
-### Advanced Configuration
+Este proyecto está bajo Licencia - mira el archivo LICENSE.md para detalles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+¡Gracias! 🎁
 
-### Deployment
+Quisiera dar las gracias a todos aquellos que estuvieron involucrados en la creación de este proyecto, brindando sus conocimientos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Eric Wajnrajch (Coordinador)
+Rosendo Manuel alves (tutor)<--- Infinitas gracias.
+Juan Magos (Profesor)
