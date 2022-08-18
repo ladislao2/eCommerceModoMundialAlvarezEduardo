@@ -5,6 +5,7 @@ import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
 import { CartContext } from "../cartContext";
+import { TiDirections } from "react-icons/ti";
 
 const ItemDetail = ({ item }) => {
   const { name, img, Descripcion, Precio, Stock } = item;
@@ -19,7 +20,8 @@ const ItemDetail = ({ item }) => {
   };
 
   return (
-    <Card style={{ width: "18rem" }}>
+    
+    <Card style={{ width: "18rem"  }}>
       <Card.Img variant="top" src={img} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
@@ -32,6 +34,7 @@ const ItemDetail = ({ item }) => {
         )}
       </Card.Body>
     </Card>
+    
   );
 };
 
