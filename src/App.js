@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<ItemListContainer greeting="Bienvenido" />}
+            element={<ItemListContainer greeting="Modo Mundial le da la bienvenida." />}
           />
           <Route
             path="/categorias/:categoria"

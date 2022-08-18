@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import Loader from "./Loader";
 //import productos from "../mock/productos";
 import ItemList from "./ItemList";
 import {
@@ -11,11 +12,13 @@ import {
 } from "firebase/firestore";
 import { useParams } from "react-router-dom";
 
-const ItemListContainer = () => {
+const ItemListContainer = ({ greeting }) => {
   const [data, setData] = useState([]);
   const { categoria } = useParams();
+  const [cargando, setCargando] = useState(true);
 
   useEffect(() => {
+    setCargando(true);
     const querydb = getFirestore();
     const queryCollection = collection(querydb, "items");
     if (categoria) {
@@ -24,25 +27,33 @@ const ItemListContainer = () => {
         where("categoria", "==", categoria)
       );
 
-      getDocs(queryFilter).then(res =>
-        setData(res.docs.map(items => ({ id: items.id, ...items.data() })))
+      getDocs(queryFilter).then((res) =>
+        setData(res.docs.map((items) => ({ id: items.id, ...items.data() })))
       );
     } else {
-      getDocs(queryCollection).then(res =>
-        setData(res.docs.map(items=> ({ id: items.id, ...items.data() })))
+      getDocs(queryCollection).then((res) =>
+        setData(res.docs.map((items) => ({ id: items.id, ...items.data() })))
+        
+       
+
       );
+     
     }
+     setData(data);
+     setCargando(false);
   }, [categoria]);
 
   return (
-    <div>
-      
-     
+    <>
+      <h1>{greeting}</h1>
+      {cargando ? (
+        <Loader />
+      ) : (
         <div className="cards">
           <ItemList items={data} />
         </div>
-  
-    </div>
+      )}
+    </>
   );
 };
 
