@@ -87,5 +87,11 @@ code {
   margin: 0;
 }
 
-  
-
+.spinner-border {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  text-align: justify;
+  align-items: center;
+  align-content: ;
+}

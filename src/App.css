@@ -49,8 +49,18 @@
   
   
 }
+.cards {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+}
 
-card-container {
+
+
+.card-container {
   height: 450px;
   width: 300px;
   border: 1px solid var(--otro);
@@ -79,4 +89,13 @@ card-container {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;  
+}
+
+.spinner-border {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  text-align: justify;
+  align-items: center;
+  
 }
