@@ -48,10 +48,6 @@ Eduardo Alvarez Holmberg
 
 
 
-Licencia 📄
-
-Este proyecto está bajo Licencia - mira el archivo LICENSE.md para detalles
-
 ¡Gracias! 🎁
 
 Quisiera dar las gracias a todos aquellos que estuvieron involucrados en la creación de este proyecto, brindando sus conocimientos:
