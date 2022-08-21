@@ -53,5 +53,7 @@ Eduardo Alvarez Holmberg
 Quisiera dar las gracias a todos aquellos que estuvieron involucrados en la creación de este proyecto, brindando sus conocimientos:
 
 Eric Wajnrajch (Coordinador)
+
 Rosendo Manuel alves (tutor)<--- Infinitas gracias.
+
 Juan Magos (Profesor)
