@@ -3,9 +3,9 @@ import Card from "react-bootstrap/Card";
 import { useState, useContext } from "react";
 
 import { Link } from "react-router-dom";
-import ItemCount from "./ItemCount";
-import { CartContext } from "../cartContext";
-import { TiDirections } from "react-icons/ti";
+import ItemCount from "../ItemCount/ItemCount";
+import { CartContext } from "../../Context/cartContext";
+
 
 const ItemDetail = ({ item }) => {
   const { name, img, Descripcion, Precio, Stock } = item;

@@ -1,0 +1,17 @@
+.nav {
+ font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+  background-image: linear-gradient( 90deg, green,rgba(0,200,0),rgba(0,200,0),rgba(0,200,0), white);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: black;
+  font-weight:bolder
+}
+.logotipo {
+  border-radius: 10px;
+}

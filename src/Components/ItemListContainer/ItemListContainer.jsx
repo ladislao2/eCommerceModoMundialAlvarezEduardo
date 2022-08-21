@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import Loader from "./Loader";
+import Loader from "../Loader/Loader";
 //import productos from "../mock/productos";
 import ItemList from "./ItemList";
+
+import "./ItemlistContainer.css"
+
 import {
   collection,
   getDocs,

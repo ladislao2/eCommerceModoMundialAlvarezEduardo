@@ -1,6 +1,7 @@
 import { TiShoppingCart } from "react-icons/ti";
-import { CartContext } from "../cartContext";
+import { CartContext } from "../../Context/cartContext";
 import React, { useContext } from "react";
+import "./Cartwidget.css"
 
 const CartWidget = () => {
   const { cart } = useContext(CartContext);

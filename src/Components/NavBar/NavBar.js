@@ -1,6 +1,7 @@
 import React from "react";
-import CartWidget from "./CartWidget";
+import CartWidget from "../Cart+CartWidget/CartWidget";
 import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
 
 const NavBar = () => {
   return (
@@ -14,11 +15,17 @@ const NavBar = () => {
           alt="logo modo mundial"
         />
       </Link>
-      <NavLink to="/categorias/Pelota" className="flex-sm-fill text-sm-center nav-link">
+      <NavLink
+        to="/categorias/Pelota"
+        className="flex-sm-fill text-sm-center nav-link"
+      >
         Pelotas
       </NavLink>
 
-      <NavLink to="/categorias/Camiseta" className="flex-sm-fill text-sm-center nav-link ">
+      <NavLink
+        to="/categorias/Camiseta"
+        className="flex-sm-fill text-sm-center nav-link "
+      >
         Camisetas
       </NavLink>
       <NavLink to="/cart">
