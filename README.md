@@ -44,17 +44,16 @@ Eduardo Alvarez Holmberg
 
 ¿Cómo comprar? 📄
 
+![Proyecto-Final-React-Ecommerce](https://user-images.githubusercontent.com/95045427/185807465-5d2f1844-ee27-41f2-a3e5-2b8bb08ff828.gif)
 
-Aca va el gif
 
-Licencia 📄
-
-Este proyecto está bajo Licencia - mira el archivo LICENSE.md para detalles
 
 ¡Gracias! 🎁
 
 Quisiera dar las gracias a todos aquellos que estuvieron involucrados en la creación de este proyecto, brindando sus conocimientos:
 
 Eric Wajnrajch (Coordinador)
+
 Rosendo Manuel alves (tutor)<--- Infinitas gracias.
+
 Juan Magos (Profesor)
