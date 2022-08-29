@@ -18,7 +18,7 @@ export const useForm = (initialForm, validateForm) => {
     items: cart.map((item) => ({
       id: item.id,
       name: item.name,
-      price: item.price,
+      Precio: item.Precio,
       cantidad: item.cantidad,
     })),
     total: totalCart(),
